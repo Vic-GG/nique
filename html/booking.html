@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../JS/map.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link rel="icon" href="../Resources/ico/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="cont-header">
+                <a href="../index.html">Inicio</a>
+                <a href="carta.html">Carta</a>
+                <a href="specialties.html">Especialidades</a>
+                <a href="groups.html">Grupos</a>
+                <a class="booking-header" href="booking.html">Reservar</a>
+            </div>
+        </nav>
+    </header>
+    <section class="web-box-booking">
+        <div class="components">
+            <section class="half-booking1">
+                <div class="cont-title">
+                    <h1>Reservas</h1>
+                </div>
+            </section>
+            <section class="half-booking2">
+                <h3>Reserva tu mesa aquí</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non doloribus at placeat. Iure doloremque
+                    sequi saepe neque</p>
+                <div class="form">
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="name">Nombre:</label>
+                            <input type="text" id="name" name="name" pattern="[A-Z]" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono:</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{9}" placeholder="Teléfono"
+                                required>
+                            <div id="phone-error" class="error-message"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje:</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Mensaje" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </form>
+                    <div id="map"></div>
+                </div>
+            </section>
+        </div>
+    </section>
+    <footer>
+        <div class="section1">
+            <a href="../index.html">
+                <h3>nique.</h3>
+            </a>
+        </div>
+        <div class="section2">
+        </div>
+        <div class="section3">
+            <ul>
+                <li><a href="aviso-legal.html">Aviso legal</a></li>
+                <li><a href="privacidad.html">Privacidad</a></li>
+                <li><a href="cookies.html">Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
